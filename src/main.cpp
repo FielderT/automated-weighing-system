@@ -296,10 +296,10 @@ void readBattery() {
   }
 
   int lvl;
-  if (voltage >= 4.10f)       lvl = 3;
-  else if (voltage >= 3.95f)  lvl = 2;
-  else if (voltage >= 3.80f)  lvl = 1;
-  else if (voltage > 3.55f)  lvl = 0;
+  if (voltage >= 4.00f)       lvl = 3;
+  else if (voltage >= 3.85f)  lvl = 2;
+  else if (voltage >= 3.7f)  lvl = 1;
+  else if (voltage > 3.6f)  lvl = 0;
 
   if (lvl != prevLevel || batteryNeedUpdate) {
     prevLevel = lvl;
